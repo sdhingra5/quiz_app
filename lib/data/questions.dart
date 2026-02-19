@@ -1,5 +1,5 @@
 import 'package:quiz_app/models/quiz_question.dart';
-import 'package:quiz_app/quiz.dart';
+
 
 const question = [
   QuizQuestion(
@@ -7,7 +7,7 @@ const question = [
     ,
    [
     'Putting his brothers sould in a suit of armor',
-    'In a Duel',
+    'In a Duel', // Correct Answer
     'In a break Dabbing Accident',
     'He never had any arms',
      ],
@@ -22,7 +22,7 @@ const question = [
      'Mercury', // Correct Answer
      'Earth',
      'Mars', 
-    ], 
+    ],
   ), 
 
 QuizQuestion(
@@ -33,7 +33,7 @@ QuizQuestion(
      'Web World Wide', 
      'Wide Web World',
      'World Web Width', 
-    ], 
+    ],
   ), 
 
 QuizQuestion(
@@ -44,11 +44,31 @@ QuizQuestion(
      'Weight', 
      'Distance',
      'Volume', 
-    ], 
+    ],
+  ), 
+
+QuizQuestion(
+    'How many grades are in school?'
+    ,
+    [
+     '7',
+     '8', 
+     '12',// Correct Answer
+     '4', 
+    ],
   ), 
 
 
-
+QuizQuestion(
+    'How many days are in our May?'
+    ,
+    [
+     '25',
+     '20', 
+     '31',// Correct Answer
+     '30', 
+    ],
+  ),  
 
 
 ];
