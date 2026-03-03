@@ -3,13 +3,13 @@ import 'package:quiz_app/models/quiz_question.dart';
 
 const question = [
   QuizQuestion(
-    'How did Edward Elric lose his arm in FMA?'
+    'Which planet is known as Red Planet?'
     ,
    [
-    'Putting his brothers sould in a suit of armor',
-    'In a Duel', // Correct Answer
-    'In a break Dabbing Accident',
-    'He never had any arms',
+    'Saturn',
+    'Mars', // Correct Answer
+    'Venus',
+    'Jupiter',
      ],
    ),
 
