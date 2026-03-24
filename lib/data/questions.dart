@@ -6,8 +6,8 @@ const question = [
     'Which planet is known as Red Planet?'
     ,
    [
-    'Saturn',
     'Mars', // Correct Answer
+    'Earth', 
     'Venus',
     'Jupiter',
      ],
@@ -18,8 +18,8 @@ const question = [
     'Which planet is closest to the sun?'
     ,
     [
-     'Venus',
-     'Mercury', // Correct Answer
+     'Mercury',// Correct Answer
+     'Venus', 
      'Earth',
      'Mars', 
     ],
@@ -51,9 +51,9 @@ QuizQuestion(
     'How many grades are in school?'
     ,
     [
-     '7',
-     '8', 
      '12',// Correct Answer
+     '8', 
+     '7',
      '4', 
     ],
   ), 
@@ -63,9 +63,9 @@ QuizQuestion(
     'How many days are in our May?'
     ,
     [
-     '25',
-     '20', 
      '31',// Correct Answer
+     '20', 
+     '25',
      '30', 
     ],
   ),  
