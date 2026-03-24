@@ -11,7 +11,7 @@ class ResultsScreen extends StatelessWidget{
     });
 
 final List<String> chosenAnswers;
-final VoidCallback onRestart;
+final void Function() onRestart;
 
  List<Map<String, Object>> getSummaryData() {
   List<Map<String, Object>> summary = [];
@@ -46,20 +46,36 @@ final VoidCallback onRestart;
           children:  [
              Text('You answered $numTotalCorrect out of $numTotalQuestions questions Correctly',
              textAlign: TextAlign.center,
-             style: const TextStyle(
-              color: Color.fromARGB(255, 230, 200, 255), //
-              fontSize: 24, //
-              fontWeight: FontWeight.bold, //
+             style: GoogleFonts.lato(
+              color: Color.fromARGB(255, 230, 200, 255), 
+              fontSize: 24, 
+              fontWeight: FontWeight.bold, 
               ),
              ),
 
-            const SizedBox(height:30,),
-            QuestionSummary(summaryData: summaryData),
+            const SizedBox(height:30),
+
+              SizedBox(
+            height: 400,
+            child: SingleChildScrollView(
+              child: QuestionSummary(
+                summaryData: summaryData),
+            ),
+              ),
+
+
             const SizedBox(height:30,),
             TextButton(
-              onPressed: (){},
-              child: const Text('Restart Quiz'),
-            )
+              onPressed: onRestart,
+              child: Text(
+                'Restart Quiz',
+                style: GoogleFonts.lato(
+                color: Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+              ),
+            ),
           ],
         ),
       ),
